@@ -3,6 +3,8 @@ body {
     font-family: 'Nunito', sans-serif;
     /* font-family: 'trebuchet MS', Arial, Helvetica, sans-serif; */
     color: #051e3d;
+    /* max-width: 1400px;
+    margin: auto; */
 }
 
 /* Header */
@@ -25,6 +27,7 @@ body {
 }
 
 /* Lien de la nav */
+
 header a {
     text-decoration: none;
     color: white;
@@ -52,13 +55,12 @@ header a:active {
     background-image: url(../img/circuitFlou.jpg);
 }
 
-img {
+.title img {
     max-width: 30%;
     height: auto;
     border: 3px solid #051e3d;
     border-radius: 20px;
     margin: 0.5em;
-
 }
 
 h1,
@@ -164,8 +166,8 @@ p {
 
 #get-back-to-the-top {
     position: fixed;
-    bottom: -10px;
-    right: -20px;
+    bottom: 3px;
+    right: 3px;
 }
 
 #get-back-to-the-top img {
@@ -186,4 +188,32 @@ footer p {
     padding: 0.6em;
     font-size: 0.6em;
     text-align: center;
+}
+
+@media (min-width: 400px) {
+    header a {
+        font-size: 0.8em;
+    }
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 550px) {
+    header a {
+        font-size: 1em;
+    }
+    footer p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 750px) { 
+    .title img {
+        max-width: 10rem;
+        margin: 0.8em;
+    }
+    header a {
+        padding: 1.5em;
+    }
 }
