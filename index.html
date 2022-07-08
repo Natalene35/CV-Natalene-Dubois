@@ -12,7 +12,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap"
 		rel="stylesheet">
 	<script defer src="https://kit.fontawesome.com/98472f4ce5.js" crossorigin="anonymous"></script>
 	<title>CV Natalène Dubois</title>
@@ -134,7 +135,8 @@
 		<section id="formations">
 			<h3>Formations</h3>
 			<ul>
-				<li class="formation"><time>Février - août 2022</time> Formation de 6 mois développeur web et mobile avec l'école
+				<li class="formation"><time>Février - août 2022</time> Formation de 6 mois développeur web et mobile
+					avec l'école
 					O'Clock (en cours)</li>
 				<li class="formation"><time>2021</time> Autoformation à HTML5, CSS3 et Python3 avec Openclassrooms,
 					Pierre Giraud,
@@ -161,12 +163,19 @@
 			</ul>
 		</section>
 	</main>
-	<div id="get-back-to-the-top">
+	<div id="get-back-to-the-top" class="invisible">
 		<a href="#top"><img src="assets\img\fleche_haut.png" alt="Retourner en haut"></a>
 	</div>
 	<footer>
 		<p>Copyright Natalène Dubois</p>
 	</footer>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			window.onscroll = function(event) {
+				document.querySelector("#get-back-to-the-top").className = (window.pageYOffset > 100) ? "visible" : "invisible";
+			};
+		});
+	</script>
 </body>
 
 </html>
