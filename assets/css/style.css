@@ -3,8 +3,8 @@ body {
     font-family: 'Nunito', sans-serif;
     /* font-family: 'trebuchet MS', Arial, Helvetica, sans-serif; */
     color: #051e3d;
-    /* max-width: 1400px;
-    margin: auto; */
+    /* max-width: 1400px; */
+    /* margin: auto;  */
 }
 
 /* Header */
@@ -38,7 +38,7 @@ header a {
 
 header a:hover {
     transform: scale(1.25);
-    font-size: 0.7em;
+    font-size: 1.1em;
     border: 1px solid #2ca1cc;
     box-shadow: 0 0 3px 3px #2ca1cc;
 }
@@ -223,6 +223,6 @@ footer p {
         margin: 0.8em;
     }
     header a {
-        padding: 1.5em;
+        padding: 0.7em 1.5em;
     }
 }
